@@ -15,7 +15,7 @@ const Book = () => {
 
     //페이징 관련
     const blockSize = 5;
-    const pageSize = 5;
+    const pageSize = 10;
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPage, setTotalPage] = useState(0);
  
@@ -179,6 +179,7 @@ const Book = () => {
           <col width="100px" />
           <col width="100px" />
           <col width="100px" />
+          <col width="100px" />
         </colgroup>
 
         <thead>
@@ -187,6 +188,7 @@ const Book = () => {
             <th scope="col" width="150px">이미지</th>
             <th scope="col" width="550px">제목</th>
             <th scope="col" width="250px">저자</th>
+            <th scope="col" width="250px">출판사</th>
             <th scope="col" width="200px">가격</th>
             <th scope="col" width="200px">재고량</th>
           </tr>
@@ -199,6 +201,7 @@ const Book = () => {
                 <td>{item.bookNo}</td>
                 <td style={{cursor: 'pointer'}} onClick={() => {searchDetail(item.bookNo)}}>{item.bookTitle}</td>
                 <td>{item.bookWriter}</td> 
+                <td>{item.publisher}</td> 
                 <td>{item.bookPrice}원</td>
                 <td>{item.bookCnt}권</td>
               </tr>

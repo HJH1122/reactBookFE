@@ -179,7 +179,7 @@ const BookDetailModal = ({show, setShow, action, bookNo}) => {
           </div>
         </div>
         <div className="row mb-1">
-          <label htmlFor="bookWriter" className="col-sm-3 col-form-label">작성자</label>
+          <label htmlFor="bookWriter" className="col-sm-3 col-form-label">저자</label>
           <div className="col-sm-9">
             <input type="input" id="bookWriter" className="form-control" disabled={action === 'U'} value={bookWriter} onChange={(e)=>setBookWriter(e.target.value)}/>
           </div>
