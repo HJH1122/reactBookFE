@@ -1,12 +1,7 @@
-# React + Vite
+1. 윈도우 컴퓨터에서 깃 소스를 pull 받으신 후 VS CODE에서 폴더열기를 통해 프로젝트 파일을 엽니다.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2. 프로젝트 실행 전에 node 모듈을 받기 위하여 VS CODE 터미널에서 npm install 을 입력 후 실행하여 설치합니다
 
-Currently, two official plugins are available:
+3. 설치 완료 후 VS CODE 터미널에서 npm run dev를 실행합니다
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. 실행이 되었으면 브라우저를 실행하여 url에 'http://localhost:5173/'를 입력 후 해당 홈페이지 기능이 동작하는지 확인합니다.
