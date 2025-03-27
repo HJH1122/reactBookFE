@@ -198,7 +198,18 @@ const Book = () => {
             return(
               <tr key={index}>
                 <td>{item.bookNo}</td>
-                <td>{item.bookNo}</td>
+                <td>
+                    {/* 하드코딩된 이미지 URL */}
+                    <img
+                      src="https://placehold.co/600x400"  // 예시로 임시 이미지를 사용
+                      alt="book image"
+                      style={{
+                        maxWidth: '100px',   // 최대 너비
+                        maxHeight: '150px',  // 최대 높이
+                        objectFit: 'cover'   // 비율 유지하면서 잘림 방지
+                      }}
+                    />
+                  </td>
                 <td style={{cursor: 'pointer'}} onClick={() => {searchDetail(item.bookNo)}}>{item.bookTitle}</td>
                 <td>{item.bookWriter}</td> 
                 <td>{item.publisher}</td> 
